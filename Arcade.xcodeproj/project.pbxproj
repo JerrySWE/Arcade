@@ -8,17 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		C4237D752B08A81500B88CA3 /* ArcadeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4237D742B08A81500B88CA3 /* ArcadeApp.swift */; };
-		C4237D772B08A81500B88CA3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4237D762B08A81500B88CA3 /* ContentView.swift */; };
 		C4237D792B08A81600B88CA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4237D782B08A81600B88CA3 /* Assets.xcassets */; };
 		C4237D7C2B08A81600B88CA3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4237D7B2B08A81600B88CA3 /* Preview Assets.xcassets */; };
+		C4237D852B08A8C700B88CA3 /* TetrisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4237D832B08A8C700B88CA3 /* TetrisView.swift */; };
+		C4237D862B08A8C700B88CA3 /* TetrisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4237D842B08A8C700B88CA3 /* TetrisViewModel.swift */; };
+		C4237D8A2B08A8F200B88CA3 /* MineSweeperViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4237D882B08A8F200B88CA3 /* MineSweeperViewModel.swift */; };
+		C4237D8B2B08A8F200B88CA3 /* MineSweeperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4237D892B08A8F200B88CA3 /* MineSweeperView.swift */; };
+		C4237D8E2B08A90900B88CA3 /* arcade-license.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C4237D8D2B08A90900B88CA3 /* arcade-license.pdf */; };
+		C4237D922B08A98800B88CA3 /* Silkscreen-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4237D902B08A98800B88CA3 /* Silkscreen-Regular.ttf */; };
+		C4237D932B08A98800B88CA3 /* Silkscreen-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4237D912B08A98800B88CA3 /* Silkscreen-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C4237D712B08A81500B88CA3 /* Arcade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Arcade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4237D742B08A81500B88CA3 /* ArcadeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcadeApp.swift; sourceTree = "<group>"; };
-		C4237D762B08A81500B88CA3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C4237D782B08A81600B88CA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4237D7B2B08A81600B88CA3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C4237D832B08A8C700B88CA3 /* TetrisView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TetrisView.swift; sourceTree = "<group>"; };
+		C4237D842B08A8C700B88CA3 /* TetrisViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TetrisViewModel.swift; sourceTree = "<group>"; };
+		C4237D882B08A8F200B88CA3 /* MineSweeperViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineSweeperViewModel.swift; sourceTree = "<group>"; };
+		C4237D892B08A8F200B88CA3 /* MineSweeperView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineSweeperView.swift; sourceTree = "<group>"; };
+		C4237D8D2B08A90900B88CA3 /* arcade-license.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "arcade-license.pdf"; sourceTree = "<group>"; };
+		C4237D902B08A98800B88CA3 /* Silkscreen-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Silkscreen-Regular.ttf"; sourceTree = "<group>"; };
+		C4237D912B08A98800B88CA3 /* Silkscreen-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Silkscreen-Bold.ttf"; sourceTree = "<group>"; };
+		C4237D942B08A9E100B88CA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +64,12 @@
 		C4237D732B08A81500B88CA3 /* Arcade */ = {
 			isa = PBXGroup;
 			children = (
+				C4237D942B08A9E100B88CA3 /* Info.plist */,
+				C4237D8F2B08A97300B88CA3 /* AppFont */,
+				C4237D8C2B08A90900B88CA3 /* Licenses */,
+				C4237D872B08A8F200B88CA3 /* MineSweeper */,
+				C4237D822B08A8C700B88CA3 /* Tetris */,
 				C4237D742B08A81500B88CA3 /* ArcadeApp.swift */,
-				C4237D762B08A81500B88CA3 /* ContentView.swift */,
 				C4237D782B08A81600B88CA3 /* Assets.xcassets */,
 				C4237D7A2B08A81600B88CA3 /* Preview Content */,
 			);
@@ -65,6 +82,41 @@
 				C4237D7B2B08A81600B88CA3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C4237D822B08A8C700B88CA3 /* Tetris */ = {
+			isa = PBXGroup;
+			children = (
+				C4237D832B08A8C700B88CA3 /* TetrisView.swift */,
+				C4237D842B08A8C700B88CA3 /* TetrisViewModel.swift */,
+			);
+			path = Tetris;
+			sourceTree = "<group>";
+		};
+		C4237D872B08A8F200B88CA3 /* MineSweeper */ = {
+			isa = PBXGroup;
+			children = (
+				C4237D882B08A8F200B88CA3 /* MineSweeperViewModel.swift */,
+				C4237D892B08A8F200B88CA3 /* MineSweeperView.swift */,
+			);
+			path = MineSweeper;
+			sourceTree = "<group>";
+		};
+		C4237D8C2B08A90900B88CA3 /* Licenses */ = {
+			isa = PBXGroup;
+			children = (
+				C4237D8D2B08A90900B88CA3 /* arcade-license.pdf */,
+			);
+			path = Licenses;
+			sourceTree = "<group>";
+		};
+		C4237D8F2B08A97300B88CA3 /* AppFont */ = {
+			isa = PBXGroup;
+			children = (
+				C4237D912B08A98800B88CA3 /* Silkscreen-Bold.ttf */,
+				C4237D902B08A98800B88CA3 /* Silkscreen-Regular.ttf */,
+			);
+			path = AppFont;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +177,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4237D932B08A98800B88CA3 /* Silkscreen-Bold.ttf in Resources */,
+				C4237D922B08A98800B88CA3 /* Silkscreen-Regular.ttf in Resources */,
 				C4237D7C2B08A81600B88CA3 /* Preview Assets.xcassets in Resources */,
 				C4237D792B08A81600B88CA3 /* Assets.xcassets in Resources */,
+				C4237D8E2B08A90900B88CA3 /* arcade-license.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +192,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4237D772B08A81500B88CA3 /* ContentView.swift in Sources */,
+				C4237D852B08A8C700B88CA3 /* TetrisView.swift in Sources */,
+				C4237D8B2B08A8F200B88CA3 /* MineSweeperView.swift in Sources */,
+				C4237D8A2B08A8F200B88CA3 /* MineSweeperViewModel.swift in Sources */,
 				C4237D752B08A81500B88CA3 /* ArcadeApp.swift in Sources */,
+				C4237D862B08A8C700B88CA3 /* TetrisViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,8 +330,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Arcade/Preview Content\"";
+				DEVELOPMENT_TEAM = 63Z846Y4D5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Arcade/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -300,8 +360,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Arcade/Preview Content\"";
+				DEVELOPMENT_TEAM = 63Z846Y4D5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Arcade/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
