@@ -13,11 +13,11 @@ extension TetrisView {
     @MainActor class TetrisViewModel: ObservableObject {
         @Published var rowNum = 20
         @Published var colNum = 10
-        @Published var tetrisGrid: [[Block]]
+        @Published var tetrisGrid: [[TetrisBlock]]
         
         private let padding = 5.0
         
-        struct Block: Hashable, Identifiable {
+        struct TetrisBlock: Hashable, Identifiable {
             let id = UUID()
             let row: Int
             let col: Int
@@ -27,9 +27,9 @@ extension TetrisView {
         init() {
             tetrisGrid = []
             for row in 0 ..< rowNum {
-                var currentRow = [Block]()
+                var currentRow = [TetrisBlock]()
                 for col in 0 ..< colNum {
-                    currentRow.append(Block(row: row, col: col, filled: false))
+                    currentRow.append(TetrisBlock(row: row, col: col, filled: false))
                 }
                 tetrisGrid.append(currentRow)
             }

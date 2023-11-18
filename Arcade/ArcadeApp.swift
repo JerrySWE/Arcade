@@ -11,7 +11,7 @@ import SwiftUI
 struct ArcadeApp: App {
     var body: some Scene {
         WindowGroup {
-            MineSweeperView()
+            MainMenuView()
         }
     }
 }

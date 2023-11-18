@@ -7,31 +7,32 @@
 
 import SwiftUI
 
-struct TopLeftTriangle: Shape {
-    func path(in rect: CGRect) -> Path {
-        var path = Path()
-
-        path.move(to: CGPoint(x: rect.minX, y: rect.minY))
-        path.addLine(to: CGPoint(x: rect.maxX, y: rect.minY))
-        path.addLine(to: CGPoint(x: rect.minX, y: rect.maxY))
-
-        return path
-    }
-}
-
 struct MineSweeperView: View {
-    @StateObject private var viewModel = MineSweeperViewModel()
+    @Environment(\.dismiss) private var dismiss
     
+    @StateObject private var viewModel = MineSweeperViewModel()
     @State private var didHold = false
     
     private let flagActionFeedback = UIImpactFeedbackGenerator(style: .medium)
     
     var body: some View {
         GeometryReader { geo in
-            ZStack {
+            ZStack (alignment: .topLeading) {
                 Color.gray.ignoresSafeArea()
                 
-                VStack (spacing: 0) {
+                
+                
+                VStack (alignment: .leading, spacing: 0) {
+                    Button {
+                        dismiss()
+                    } label: {
+                        Image(systemName: "arrowshape.backward.fill")
+                            .resizable()
+                            .frame(width: 30, height: 30)
+                            .padding([.leading], 5)
+                            .foregroundColor(.black)
+                    }
+                    
                     Text("Mine Left")
                         .font(.custom("Silkscreen-Regular", size: 46))
                         .padding(20)
@@ -42,26 +43,13 @@ struct MineSweeperView: View {
                                 let block = viewModel.mineField[row][col]
                                 
                                 Button {
-                                    if didHold {
-                                    } else {
+                                    if !didHold {
                                         
                                     }
                                     
                                     didHold = false
                                 } label: {
-                                    Rectangle()
-                                        .frame(width: viewModel.blockSize, height: viewModel.blockSize)
-                                        .foregroundColor(.gray)
-                                        .border(.white)
-                                        .overlay(
-                                            TopLeftTriangle()
-                                                .fill(.white)
-                                        )
-                                        .overlay(
-                                            Rectangle()
-                                                .foregroundColor(Color("MineBody"))
-                                                .frame(width: viewModel.blockSize - 10, height: viewModel.blockSize - 10)
-                                        )
+                                    GameBlock(blockSize: $viewModel.blockSize, borderSize: 10.0)
                                         .overlay(
                                             Image(systemName: "flag.fill")
                                                 .foregroundColor(.red)

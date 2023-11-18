@@ -17,6 +17,8 @@
 		C4237D8E2B08A90900B88CA3 /* arcade-license.pdf in Resources */ = {isa = PBXBuildFile; fileRef = C4237D8D2B08A90900B88CA3 /* arcade-license.pdf */; };
 		C4237D922B08A98800B88CA3 /* Silkscreen-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4237D902B08A98800B88CA3 /* Silkscreen-Regular.ttf */; };
 		C4237D932B08A98800B88CA3 /* Silkscreen-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4237D912B08A98800B88CA3 /* Silkscreen-Bold.ttf */; };
+		C4237D972B08ABDE00B88CA3 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4237D962B08ABDE00B88CA3 /* MainMenuView.swift */; };
+		C4237D9A2B0926E400B88CA3 /* GameBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4237D992B0926E400B88CA3 /* GameBlock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		C4237D902B08A98800B88CA3 /* Silkscreen-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Silkscreen-Regular.ttf"; sourceTree = "<group>"; };
 		C4237D912B08A98800B88CA3 /* Silkscreen-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Silkscreen-Bold.ttf"; sourceTree = "<group>"; };
 		C4237D942B08A9E100B88CA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C4237D962B08ABDE00B88CA3 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		C4237D992B0926E400B88CA3 /* GameBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBlock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,13 +69,15 @@
 			isa = PBXGroup;
 			children = (
 				C4237D942B08A9E100B88CA3 /* Info.plist */,
-				C4237D8F2B08A97300B88CA3 /* AppFont */,
-				C4237D8C2B08A90900B88CA3 /* Licenses */,
-				C4237D872B08A8F200B88CA3 /* MineSweeper */,
-				C4237D822B08A8C700B88CA3 /* Tetris */,
 				C4237D742B08A81500B88CA3 /* ArcadeApp.swift */,
 				C4237D782B08A81600B88CA3 /* Assets.xcassets */,
+				C4237D8F2B08A97300B88CA3 /* AppFont */,
+				C4237D982B0926C000B88CA3 /* Components */,
+				C4237D8C2B08A90900B88CA3 /* Licenses */,
+				C4237D952B08ABC700B88CA3 /* MainMenu */,
+				C4237D872B08A8F200B88CA3 /* MineSweeper */,
 				C4237D7A2B08A81600B88CA3 /* Preview Content */,
+				C4237D822B08A8C700B88CA3 /* Tetris */,
 			);
 			path = Arcade;
 			sourceTree = "<group>";
@@ -117,6 +123,22 @@
 				C4237D902B08A98800B88CA3 /* Silkscreen-Regular.ttf */,
 			);
 			path = AppFont;
+			sourceTree = "<group>";
+		};
+		C4237D952B08ABC700B88CA3 /* MainMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C4237D962B08ABDE00B88CA3 /* MainMenuView.swift */,
+			);
+			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		C4237D982B0926C000B88CA3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C4237D992B0926E400B88CA3 /* GameBlock.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +214,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4237D972B08ABDE00B88CA3 /* MainMenuView.swift in Sources */,
+				C4237D9A2B0926E400B88CA3 /* GameBlock.swift in Sources */,
 				C4237D852B08A8C700B88CA3 /* TetrisView.swift in Sources */,
 				C4237D8B2B08A8F200B88CA3 /* MineSweeperView.swift in Sources */,
 				C4237D8A2B08A8F200B88CA3 /* MineSweeperViewModel.swift in Sources */,
