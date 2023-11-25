@@ -19,6 +19,7 @@
 		C4237D932B08A98800B88CA3 /* Silkscreen-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4237D912B08A98800B88CA3 /* Silkscreen-Bold.ttf */; };
 		C4237D972B08ABDE00B88CA3 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4237D962B08ABDE00B88CA3 /* MainMenuView.swift */; };
 		C4237D9A2B0926E400B88CA3 /* GameBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4237D992B0926E400B88CA3 /* GameBlock.swift */; };
+		C4237D9C2B093D6200B88CA3 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4237D9B2B093D6200B88CA3 /* AppColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		C4237D942B08A9E100B88CA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C4237D962B08ABDE00B88CA3 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 		C4237D992B0926E400B88CA3 /* GameBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBlock.swift; sourceTree = "<group>"; };
+		C4237D9B2B093D6200B88CA3 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				C4237D992B0926E400B88CA3 /* GameBlock.swift */,
+				C4237D9B2B093D6200B88CA3 /* AppColor.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4237D972B08ABDE00B88CA3 /* MainMenuView.swift in Sources */,
+				C4237D9C2B093D6200B88CA3 /* AppColor.swift in Sources */,
 				C4237D9A2B0926E400B88CA3 /* GameBlock.swift in Sources */,
 				C4237D852B08A8C700B88CA3 /* TetrisView.swift in Sources */,
 				C4237D8B2B08A8F200B88CA3 /* MineSweeperView.swift in Sources */,

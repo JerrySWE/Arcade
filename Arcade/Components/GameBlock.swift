@@ -20,12 +20,13 @@ struct TopLeftTriangle: Shape {
 }
 
 struct GameBlock: View {
-    @Binding var blockSize: Double
+    @Binding var blockWidth: Double
+    @Binding var blockHeight: Double
     @State var borderSize: Double
     
     var body: some View {
         Rectangle()
-            .frame(width: blockSize, height: blockSize)
+            .frame(width: blockWidth, height: blockHeight)
             .foregroundColor(.gray)
             .border(.white)
             .overlay(
@@ -34,12 +35,12 @@ struct GameBlock: View {
             )
             .overlay(
                 Rectangle()
-                    .foregroundColor(Color("MineBody"))
-                    .frame(width: blockSize - borderSize, height: blockSize - borderSize)
+                    .foregroundColor(.minebody)
+                    .frame(width: blockWidth - borderSize, height: blockHeight - borderSize)
             )
     }
 }
 
 #Preview {
-    GameBlock(blockSize: .constant(50.0), borderSize: 10.0)
+    GameBlock(blockWidth: .constant(200.0), blockHeight: .constant(50.0), borderSize: 10.0)
 }

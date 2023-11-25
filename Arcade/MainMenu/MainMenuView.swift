@@ -16,38 +16,39 @@ struct MainMenuView: View {
         GeometryReader { geo in
             NavigationStack {
                 ZStack {
-                    Color.gray.ignoresSafeArea()
+                    Color.teal.ignoresSafeArea()
                     
-                    ScrollView {
-                        Grid() {
-                            GridRow {
-                                NavigationLink {
-                                    MineSweeperView()
-                                        .navigationBarBackButtonHidden(true)
-                                } label: {
-                                    VStack {
-//                                        Rectangle()
-//                                            .cornerRadius(10.0)
-//                                            .foregroundColor(.indigo)
-//                                            .frame(width: itemWidth, height: itemWidth)
-//
-                                        GameBlock(blockSize: $itemWidth, borderSize: 20.0)
-                                            .overlay(
-                                                Image("mine")
-                                                    .resizable()
-                                                    .frame(width: itemWidth * (2/3), height: itemWidth * (2/3))
-                                            )
-                                        
-                                        Text("Minesweeper")
-                                            .font(.custom("Silkscreen-Regular", size: 20))
-                                            .foregroundColor(.white)
+                    Image("arcade-2")
+//                        .blur(radius: /*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
+                    
+                    VStack {
+
+                        ScrollView {
+                            Grid() {
+                                GridRow {
+                                    NavigationLink {
+                                        MineSweeperView()
+                                            .navigationBarBackButtonHidden(true)
+                                    } label: {
+                                        VStack {
+                                            GameBlock(blockWidth: $itemWidth, blockHeight: $itemWidth, borderSize: 20.0)
+                                                .overlay(
+                                                    Image("mine")
+                                                        .resizable()
+                                                        .frame(width: itemWidth, height: itemWidth)
+                                                )
+                                            
+                                            Text("Minesweeper")
+                                                .font(.custom("Silkscreen-Bold", size: 20))
+                                                .foregroundColor(.black)
+                                        }
                                     }
                                 }
                             }
                         }
-                    }
-                    .onAppear {
-                        itemWidth = min(geo.size.width / 3.0, geo.size.height / 3.0)
+                        .onAppear {
+                            itemWidth = min(geo.size.width / 5.0, geo.size.height / 5.0)
+                        }
                     }
                 }
             }
